@@ -1,3 +1,24 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
 "# Ndeared.com"<br><br>
 Developer Info : "http://developer.ndeared.com"<br><br>
 <img src = "http://developer.ndeared.com/devinfo_screenshot.png" /><br><br>
