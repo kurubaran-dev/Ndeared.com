@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="material_search_view"
+        android:summary="Material Search View"
+        android:title="MaterialSearchView" />
+    <Preference
+        android:key="circular_anim"
+        android:summary="Circular Animation"
+        android:title="CircularAnim" />
+    <Preference
+        android:key="whats_new"
+        android:summary="WhatsNew"
+        android:title="WhatsNew" />
+    <Preference
+        android:key="android_rate"
+        android:summary="Android-Rate"
+        android:title="Android-Rate" />
+</PreferenceScreen>
