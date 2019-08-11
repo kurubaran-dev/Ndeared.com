@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.ndeared.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ndeared_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="dev.ndeared.com.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="dev.ndeared.com.ui.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentBackground">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dev.ndeared.com.ui.RegisterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent" />
+        <activity
+            android:name="dev.ndeared.com.ui.ChatActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="dev.ndeared.com.MainActivity"/>
+        <activity android:name="dev.ndeared.com.ui.AddGroupActivity"
+            android:theme="@style/MyThemeNoActionbar"/>
+        <service android:name="dev.ndeared.com.service.FriendChatService"
+            android:exported="false"
+            android:persistent= "true" />
+    </application>
+
+</manifest>
